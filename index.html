@@ -5,6 +5,17 @@
     <title>learn VueJs</title>
 </head>
 <body>
-
+    <div id="app">
+        <h1>{{message}}</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script !src="">
+        const app=new Vue({
+            el: '#app',
+            data:{
+                message: "bonjour vue js ok  "
+            }
+        })
+    </script>
 </body>
 </html>
