@@ -6,8 +6,15 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ message }}</h1>
-        <h2>{{ restaurantName }}</h2>
+        <h1>{{ restaurantName }}</h1>
+        <h2>panier d'achat</h2>
+        <ul>
+            <li>Pommes:{{ costOfApples }}XAF</li>
+            <li>Bananes:{{ costOfBananas }}XAF</li>
+            <li>Noix de coco :{{ costOfCoconuts }}XAF</li>
+            <li>Total :{{ totalPrice }}XAF</li>
+        </ul>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script !src="">
@@ -16,6 +23,14 @@
             data:{
                 message: "bonjour vue js ok  ",
                 restaurantName:"ainix resto",
+                costOfApples:5,
+                costOfBananas:2,
+                costOfCoconuts:8,
+            },
+            computed:{
+                totalPrice(){
+                    return this.costOfApples + this.costOfBananas + this.costOfCoconuts;
+                }
             }
         })
     </script>
