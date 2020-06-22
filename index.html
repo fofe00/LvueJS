@@ -6,14 +6,16 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{message}}</h1>
+        <h1>{{ message }}</h1>
+        <h2>{{ restaurantName }}</h2>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script !src="">
         const app=new Vue({
             el: '#app',
             data:{
-                message: "bonjour vue js ok  "
+                message: "bonjour vue js ok  ",
+                restaurantName:"ainix resto",
             }
         })
     </script>
